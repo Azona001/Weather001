@@ -37,4 +37,4 @@ A simple and responsive weather application built using **HTML**, **CSS**, and *
 
 ```bash
 git clone https://github.com/yourusername/weather-app-js.git
-cd weather-app-js
+cd weather-app-js 
