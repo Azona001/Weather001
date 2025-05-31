@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+<script defer src="bundlea5dc8bd4311ce3421962.js"></script></head>
+<body>
+    <main class="wrapper">
+        <div class="search">
+                <form id="getWeather">
+                    <input type="search" class="input" placeholder="Enter a city" />
+                    <button type="submit"><span class="material-symbols-outlined">
+                            search
+                            </span>
+                    </button>
+                </form>
+            </div>
+        <div class="container hide">
+            <div class="modal">
+                
+                <div class="message"><span class="close"></span></div> 
+                <div class="display"></div>
+                <span class="text"></span>
+           </div>
+            
+            
+            <div class="backdrop">
+                <div class="city">
+                    <h1 class="name"></h1>
+                    <h3 class="date"></h3>
+                </div>
+                <div class="image">
+                    <img src="" alt="" class="weather-icon" />
+                    <p class="condition"></p>
+                </div>
+                <div class="temp">
+                    <span class="degree"></span><sup><i class="tempUnit">°F</i></sup>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="weatherdata hide">
+            <div class="symbol">
+                <ul>
+                    <li class="symbol-image"><span class="material-symbols-outlined">
+                        humidity_low
+                        </span><i class="humidUnit"></i>
+                    </li>
+                    <li>HUMIDITY</li>
+                    <li id="humidity" class="lists info"></li>
+                </ul>
+            </div>
+            <div class="symbol">
+                <ul>
+                    <li class="symbol-image"><span class="material-symbols-outlined">
+                        air
+                        </span><i class="windUnit"></i>
+                    </li>
+                    <li>WIND</li>
+                    <li id="wind" class="lists info"></li>
+                </ul>
+            </div>
+            <div class="symbol">
+                <ul>
+                    <li class="symbol-image"><span class="material-symbols-outlined">
+                        thermostat_arrow_up
+                        </span><i class="tempUnit"></i>
+                    </li>
+                    <li>MAX</li>
+                    <li id="max" class="lists info"></li>
+                </ul>
+            </div>
+             <div class="symbol">
+                <ul>
+                    <li class="symbol-image"><span class="material-symbols-outlined">
+                        thermostat_arrow_down
+                        </span><i class="tempUnit"></i>
+                    </li>
+                    <li>MIN</li>
+                    <li id="min" class="lists info"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
