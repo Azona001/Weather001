@@ -2,7 +2,7 @@ import './style.css';
 import { button } from './button.js';
 import getData  from './getData.js';
 import { displayMessage } from './displayMessage.js';
-import { apiKey } from './config.js';
+import { API_KEY } from './config.js';
 
 
 console.log(button);
@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const input = document.querySelector('.input');
    
-    const url1 = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${apiKey}`;
+    const url1 = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY}`;
 
     const fetchData = fetch(url1);
     fetchData.then((response) => {
